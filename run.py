@@ -6,7 +6,7 @@ import sys
 import re
 import os
 
-rrd_path = 'dbs'
+rrd_path = 'dbs/'
 timeout = int(os.getenv('TIMEOUT', 1))
 
 
