@@ -75,7 +75,7 @@ while True:
         var = split[20]
 
         print("{0}:\t{1:.1f} FPS\t+- {2} with {3:02d} players".format(addr, round(fps, 2), svms, int(players)))
-        # subprocess.call("rrdtool update {0}{1}.rrd N:{2}{3}{4}".format(rrd_path, get_filename(sv), fps, svms, players), shell=True)
+        subprocess.call("rrdtool update {0}{1}.rrd N:{2}{3}{4}".format(rrd_path, get_filename(sv), fps, svms, players), shell=True)
 
     sys.stdout.flush()
     time.sleep(timeout)
