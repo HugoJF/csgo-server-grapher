@@ -28,7 +28,6 @@ def connect_server(sv):
     except Exception as e:
         print(e)
         print('Error while authenticating server {0}'.format(addr))
-        exit(1)
         
     sys.stdout.flush()
 
